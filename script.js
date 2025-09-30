@@ -5,8 +5,8 @@ window.addEventListener("load", function () {
   input.addEventListener("input", updateValue);
 
   function updateValue(e) {
-    let kruunut = e.target.value;
-    let eurot = kruunut * 0.08470771602;
+    let kohde_valuutta = e.target.value;
+    let eurot = kohde_valuutta * 0.041; // Tässä tällä hetkellä hard-koodaus Tsekin Korunaan
     output.textContent = (Math.round(eurot * 100) / 100).toFixed(2);
   }
 });

@@ -7,44 +7,48 @@ body {
   line-height: 1.5;
   font-size: 1.5rem;
 }
-#sailio,
-#vasen,
-#oikea,
-#keski {
+
+#sailio {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-}
-#kr_logo,
-#yhtasuuri,
-#euro {
-  margin-left: 1vw;
-}
-#e_logo {
-  margin-left: 0.5vw;
-}
-input {
-  font-size: 1.5rem;
-}
-footer {
-  width: 100%;
-  height: 3%;
-  position: fixed;
-  bottom: 1vw;
-  display: flex;
-  justify-content: center;
-  font-size: 1rem;
-}
-a {
-  text-decoration: none;
+  flex-direction: column;
+  gap: 2vw;
+  margin-top: 10vw;
 }
 
-@media screen and (max-width: 540px) {
-  #sailio {
-    flex-direction: column;
-  }
-  input {
-    width: 50%;
-  }
+#vasen {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+
+#oikea {
+  display: flex;
+  font-size: 2rem;
+}
+
+input {
+  height: max-content;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  color: gray;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+a {
+  all: unset;
+}
+
+footer {
+  position: fixed;
+  bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vw;
+  font-size: 1rem;
 }
